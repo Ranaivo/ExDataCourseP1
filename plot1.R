@@ -9,8 +9,8 @@ cons$Time<-strptime(paste(cons$Date,cons$Time),"%d/%m/%Y %H:%M:%S")
 cons$Date<-as.Date(cons$Date, "%d/%m/%Y")
 
 rm(f)
-par("mar"=c(5.1,5.1,4.1,2.1))
+opar=par(ps=12)
 hist(cons$Global_active_power, main="Global Active Power", 
-     xlab="Global active power (kilowatts)", col="RED", ylim=c(0,1200))
-
+     xlab="Global active power (kilowatts)", col="RED")
+opar
 
