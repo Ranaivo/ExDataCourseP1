@@ -9,6 +9,6 @@ cons$Time<-strptime(paste(cons$Date,cons$Time),"%d/%m/%Y %H:%M:%S")
 cons$Date<-as.Date(cons$Date, "%d/%m/%Y")
 
 rm(f)
-opar=par(ps=12)
+png("plot2.png",480,480)
 plot(cons$Time,cons$Global_active_power, type="l",xlab="", ylab="Global Active Power (kilowatts)")
-opar
+dev.off()
