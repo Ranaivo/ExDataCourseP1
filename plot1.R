@@ -12,5 +12,5 @@ rm(f)
 par("mar"=c(5.1,5.1,4.1,2.1))
 hist(cons$Global_active_power, main="Global Active Power", 
      xlab="Global active power (kilowatts)", col="RED", ylim=c(0,1200))
-par("mar")
+
 
